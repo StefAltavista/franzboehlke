@@ -1,0 +1,19 @@
+#header {
+    position: fixed;
+}
+#home {
+    position: relative;
+}
+#body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    cursor: pointer;
+    transition: 500ms;
+}
+#logo:hover {
+    filter: hue-rotate(100deg) brightness(9000);
+}

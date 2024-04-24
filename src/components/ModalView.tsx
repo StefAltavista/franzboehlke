@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-// import "./viewModal.css";
+import "./modalView.css";
 import { itemInterface } from "./ItemsList";
 
 import Loading from "./Loading";
@@ -32,6 +32,8 @@ export default function ModalView({
                     className={`modalImg ${load}`}
                     onLoad={loaded}
                     onClick={close}
+                    width={400}
+                    height={400}
                 />
             </div>
         </div>

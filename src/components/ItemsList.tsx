@@ -8,9 +8,10 @@ export interface itemInterface {
 import Image from "next/image";
 import { useState } from "react";
 import ModalView from "./ModalView";
+import { isMobile } from "react-device-detect";
+import "./itemsList.css";
 
 export default function ItemsList({ items }: { items: itemInterface[] }) {
-    console.log(items);
     const [toggleModal, setToggleModal] = useState(false);
     const [selected, setSelected] = useState<itemInterface | null>(null);
 
@@ -18,6 +19,7 @@ export default function ItemsList({ items }: { items: itemInterface[] }) {
         setToggleModal(true);
         setSelected(item);
     };
+
     return (
         <div id="itemsList">
             {items.map((x) => (
@@ -29,8 +31,8 @@ export default function ItemsList({ items }: { items: itemInterface[] }) {
                     <Image
                         alt="franz boehlke item"
                         src={x.url}
-                        width={400}
-                        height={400}
+                        width={200}
+                        height={200}
                     />
                 </div>
             ))}

@@ -1,20 +1,26 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
 import ItemsList from "@/components/ItemsList";
 import db from "@/db/db.json";
+import "./home.css";
 
 export default function Home() {
     return (
         <div id="home">
             <div id="header">
-                <Image
-                    alt="Franz Boehlke Logo"
-                    src="/images/logo.png"
-                    width={100}
-                    height={100}
-                />
+                <Link href={"./contact"}>
+                    <Image
+                        id="logo"
+                        alt="Franz Boehlke Logo"
+                        src="/images/logo.png"
+                        width={100}
+                        height={100}
+                    />
+                </Link>
             </div>
-            <ItemsList items={db} />
+            <div id="body">
+                <ItemsList items={db} />
+            </div>
         </div>
     );
 }
