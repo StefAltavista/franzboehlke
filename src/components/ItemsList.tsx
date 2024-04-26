@@ -6,9 +6,8 @@ export interface itemInterface {
     description: string;
 }
 import Image from "next/image";
-import { useRef, useState, createRef, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import ModalView from "./ModalView";
-import { isMobile } from "react-device-detect";
 import "./itemsList.css";
 
 export default function ItemsList({ items }: { items: itemInterface[] }) {

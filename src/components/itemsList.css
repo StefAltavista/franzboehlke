@@ -16,7 +16,6 @@
     display: flex;
     justify-content: center;
     scroll-snap-align: start;
-
     min-width: calc(100% / 3);
 }
 #itemsList .item img {
