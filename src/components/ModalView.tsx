@@ -26,6 +26,7 @@ export default function ModalView({
         <div id="modalBackground" onClick={close}>
             <div id="viewModal" onClick={close}>
                 {load == "loading" && <Loading />}
+                <p>Title</p>
                 <Image
                     alt="Franz Boehlke item"
                     src={file.url}
@@ -35,6 +36,11 @@ export default function ModalView({
                     width={400}
                     height={400}
                 />
+
+                <p>
+                    Description: bla bla dfiuhasdf arg asg asdf asdf asdf
+                    fdhohasdf n{" "}
+                </p>
             </div>
         </div>
     );
