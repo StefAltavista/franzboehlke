@@ -52,7 +52,7 @@ export default function ItemsList({ items }: { items: itemInterface[] }) {
     }, [inView]);
 
     return (
-        <div id="itemsList" onWheel={handleScroll} ref={itemsListRef}>
+        <div id="itemsList" onScroll={handleScroll} ref={itemsListRef}>
             {itemsArray.map((x, idx) => (
                 <div
                     className={`item ${idx}`}
