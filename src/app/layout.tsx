@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
     title: "Franz Boehlke",
     description: "Franz Boehlke Marketplace",
-    viewport: "width=device-width, height=device-height, initial-scale=1.0",
+    viewport: "width=device-width, initial-scale=1.0",
+    keywords: "Franz Boehlke, art, artworks, products, paintings, sculptures",
 };
 
 export default function RootLayout({

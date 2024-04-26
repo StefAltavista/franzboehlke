@@ -25,6 +25,7 @@ export default function ItemsList({ items }: { items: itemInterface[] }) {
     };
 
     const handleScroll = () => {
+        console.log("scroll");
         if (itemsListRef.current) {
             let deltaH =
                 (itemsListRef.current?.scrollHeight * count) /
@@ -37,6 +38,7 @@ export default function ItemsList({ items }: { items: itemInterface[] }) {
                 itemsListRef.current.scrollTop / deltaH >=
                 itemsArray.length - 2
             ) {
+                console.log("add lines");
                 setItemsArray([...itemsArray, ...items]);
             }
         }
