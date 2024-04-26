@@ -5,6 +5,7 @@ import db from "@/db/db.json";
 import "./home.css";
 
 export default function Home() {
+    alert("javascript working?");
     return (
         <div id="home">
             <div id="header">
